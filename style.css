@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: black;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;padding: 0 2rem;
+    text-align: center;
+}
+
+.restart-btn{
+    display: none;
+    background: rgb(220, 225, 226);
+    color: black;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-bottom: auto;
+}
+
+.restart-btn:hover{
+    background:rgb(112, 75, 146);
+    color: #fff;
+}
+
+.header{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.header h1{
+    margin-bottom: 1rem;
+}
+
+.score{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 1.2rem;
+    color: white;
+}
+
+.score p:first-child{
+    background: darkblue;
+}
+
+.score p:last-child{
+    background: black;
+}
+
+.choices{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    margin-top: 3rem;
+    /* margin-left: 3rem; */
+    text-align: center;
+}
+
+#rock,
+#paper,
+#scissor{
+    cursor: pointer;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover{
+    color: darkblue
+}
+
+@media(max-width: 400px){
+    .choice{
+        font-size: 110px;
+    }
+}
+
+@media(max-width: 200px){
+    .choice{
+        font-size: 20px;
+    }
+}
+
+.text-win{
+    color: rgb(92, 148, 9);
+}
+
+.text-lose{
+    color: rgb(201, 46, 19);
+}
